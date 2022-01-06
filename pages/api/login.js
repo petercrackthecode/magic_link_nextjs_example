@@ -4,7 +4,7 @@ import CookieService from "../../lib/cookie";
 
 let magic = new Magic(process.env.MAGIC_SECRET_KEY);
 
-export default handler = async (req, res) => {
+const handler = async (req, res) => {
   if (req.method !== `POST`) return res.status(405).end(`Method not allowed`);
 
   // exchange the DID from Magic for some user data
@@ -23,3 +23,5 @@ export default handler = async (req, res) => {
 
   res.end();
 };
+
+export default handler;

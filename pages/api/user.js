@@ -1,7 +1,7 @@
 import Iron from "@hapi/iron";
 import CookieService from "../../lib/cookie";
 
-export default handler = async (req, res) => {
+const handler = async (req, res) => {
   let user;
 
   try {
@@ -18,3 +18,5 @@ export default handler = async (req, res) => {
   // and we could make database calls or just send back what we have in the token,
   res.json(user);
 };
+
+export default handler;
