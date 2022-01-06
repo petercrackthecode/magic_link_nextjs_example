@@ -6,7 +6,12 @@ export default function Dashboard() {
   return (
     <>
       <h1>Dashboard</h1>
-      {loading ? "Loading..." : <h2>User email {user.email}</h2>}
+      {loading ? "Loading..." : (
+        <div>
+          <h2>User email {user.email}</h2>
+          <button>Log out</button>
+        </div>
+        )}
     </>
   );
 }

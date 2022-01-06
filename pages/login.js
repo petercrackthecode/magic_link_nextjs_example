@@ -24,11 +24,11 @@ export default function Login() {
 
     // const authRequest = await fetch()
 
-    // if (authRequest.ok) {
+    if (authRequest.ok) {
     // We successfully logged in, our API set authorization cookies and now we can redirect
     // to the dashboard!
-    //   router.push('/dashboard');
-    // } else {/* handle errors */}
+      router.push('/dashboard');
+    } else {/* handle errors */}
   };
 
   return (
